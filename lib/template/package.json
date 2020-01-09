@@ -1,0 +1,18 @@
+{
+  "name": "",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": "",
+  "scripts": {
+    "start": "tsc -w & node ../download-temp/build/t2j.core.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.3.0",
+    "fs-extra": "^8.1.0",
+    "require-json5": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
