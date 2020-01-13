@@ -10,7 +10,7 @@ VF-CLI 能帮你快速开发并自动产出 VF Engine 所需要的 JSON 数据
 
 最终结果如图：
 
-<img src="./docs/assets/vf-cli-init-guide.png" style="width: 120px;">
+<img src="./docs/assets/vf-cli-init-guide.jpg" style="width: 120px;">
 
 ### 初始化:
 
