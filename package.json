@@ -1,5 +1,5 @@
 {
-  "name": "@vf.js/vf-cli",
+  "name": "@vf.js/cli",
   "version": "1.1.5",
   "description": "",
   "main": "index.js",
