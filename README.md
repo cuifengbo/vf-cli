@@ -2,7 +2,7 @@
 VF-CLI 能帮你快速开发并自动产出 VF Engine 所需要的 JSON 数据 
    
 ## 安装
-    npm install -g vf-cli
+    npm install -g @vf.js/cli
 ## 使用
 创建一个 VF 项目:
 
