@@ -1,0 +1,23 @@
+{
+  "name": "vf_yypc",
+  "description": "no dis",
+  "version": "0.0.1",
+  "private": true,
+  "author": "cuifengbo",
+  "scripts": {
+    "start": "tsc -w & node build/t2j.core.js"
+  },
+  "dependencies": {
+    "@vf.js/vfx": "latest",
+    "axios": "^0.19.2",
+    "chokidar": "^3.3.0",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "live-server": "^1.2.1",
+    "require-json5": "^1.0.2"
+  },
+  "devDependencies": {
+    "@vf.js/launcher": "^0.3.21",
+    "typescript": "^3.7.4"
+  }
+}

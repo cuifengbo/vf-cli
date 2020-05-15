@@ -1,0 +1,27 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var guiType;
+(function (guiType) {
+    guiType["CONTAINER"] = "container";
+    guiType["TABLE"] = "table";
+    guiType["IMAGE"] = "Image";
+    guiType["BUTTON"] = "Button";
+    guiType["RADIO"] = "CheckBox";
+    guiType["CHECKBOX"] = "CheckBox";
+    guiType["INPUT"] = "input";
+    guiType["SLIDER"] = "slider";
+    guiType["TEXT"] = "Label";
+    guiType["RECT"] = "Rect";
+    guiType["CIRCLE"] = "Circle";
+    guiType["DRAGONBONES"] = "dragonbones";
+    guiType["PARTICLE"] = "particle";
+    guiType["SHEET"] = "sheet";
+    guiType["VIDEO"] = "video";
+    guiType["AUDIO"] = "Audio";
+    guiType["MICROPHONE"] = "microphone";
+    guiType["NPM"] = "npm";
+    guiType["SVG"] = "svg";
+    guiType["GRAPHIC"] = "graphic";
+    guiType["CUSTOM"] = "custom";
+    guiType["EVALUATER"] = "Evaluater";
+})(guiType = exports.guiType || (exports.guiType = {}));

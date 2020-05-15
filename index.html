@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="full-screen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <title>vf</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="vf-container"></div>
+  <script type="module">
+
+    import './node_modules/@vf.js/launcher/dist/launcher.min.js';
+
+    createVF({ container: document.getElementById('vf-container'), debug: true ,debugGuiPath: 'http://127.0.0.1:5501/dist/gui.js',}, function (player) {
+
+      player.onReady = () => {
+        console.log("onReady"); //初始化完成
+      }
+
+      player.onSceneCreate = () => {
+        console.log("onSceneCreate"); //资源加载完成
+      }
+
+      player.onMessage = (msg) => {
+        console.log("onMessage ==>", msg);
+      }
+
+      player.onError = (evt) => {
+        console.log("onError ==>", evt);
+      }
+
+      player.onDispose = () => {
+        console.log("onDispose");
+      }
+
+      player.play('./vf-json/index.json');
+
+      // ========  测试代码 ==============
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>

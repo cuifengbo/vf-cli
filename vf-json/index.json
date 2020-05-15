@@ -1,0 +1,294 @@
+{
+  "assets": {
+    "1": {
+      "type": "image",
+      "url": "./assets/dino.png",
+      "name": "1"
+    },
+    "4": {
+      "type": "audio",
+      "url": "https://s.vipkidstatic.com/fe-static/learning-stages/assets/great-20191221.mp3",
+      "name": "4"
+    },
+    "EVA": {
+      "type": "js",
+      "url": "./assets/Evaluater.js",
+      "name": "Evaluater"
+    }
+  },
+  "global": {},
+  "scenes": [
+    {
+      "id": 0,
+      "libId": "0"
+    }
+  ],
+  "components": {
+    "0": {
+      "type": "custom",
+      "children": [
+        {
+          "id": 1,
+          "libId": 1
+        },
+        {
+          "id": 2,
+          "libId": 2,
+          "text": "Hello no!",
+          "y": 298,
+          "x": 395
+        },
+        {
+          "id": 4,
+          "libId": 4
+        }
+      ],
+      "actionList": [
+        {
+          "type": 13,
+          "event": "click",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 0,
+              "value": [
+                0,
+                "trigger dino"
+              ]
+            },
+            {
+              "type": 0,
+              "value": [
+                4,
+                [
+                  "4"
+                ],
+                "isPlaying"
+              ]
+            },
+            {
+              "type": 7,
+              "execute": [
+                {
+                  "type": 8,
+                  "condition": [
+                    [
+                      4,
+                      [
+                        "4"
+                      ],
+                      "isPlaying"
+                    ]
+                  ],
+                  "execute": [
+                    {
+                      "type": 12,
+                      "target": [
+                        11,
+                        [
+                          "4"
+                        ]
+                      ],
+                      "name": "pause"
+                    }
+                  ]
+                },
+                {
+                  "type": 10,
+                  "execute": [
+                    {
+                      "type": 12,
+                      "target": [
+                        11,
+                        [
+                          "4"
+                        ]
+                      ],
+                      "name": "play"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 13,
+          "event": "Added",
+          "target": [
+            11,
+            []
+          ],
+          "execute": [
+            {
+              "type": 0,
+              "value": [
+                0,
+                "loaded"
+              ]
+            },
+            {
+              "type": 13,
+              "event": "canplaythrough",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "加载完成可以播放了"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "play",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "小喇叭开始广播啦"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "pause",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "暂停营业"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "error",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "出错了"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "timeupdate",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "playing..."
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 13,
+              "event": "ended",
+              "target": [
+                11,
+                [
+                  "4"
+                ]
+              ],
+              "execute": [
+                {
+                  "type": 0,
+                  "value": [
+                    0,
+                    "播放完成"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "type": "Image",
+      "y": 140,
+      "width": 83,
+      "height": 138,
+      "src": 1,
+      "x": 403.5
+    },
+    "2": {
+      "type": "Label",
+      "width": 100,
+      "style": {
+        "color": "#000"
+      }
+    },
+    "3": {
+      "type": "Evaluater",
+      "userId": "9527",
+      "appId": "a154d34f8e7e41159c175a85bf2a24ba",
+      "sdkType": "h5",
+      "debug": false,
+      "env": "test",
+      "rank": 100,
+      "evalMode": 1,
+      "textMode": 0,
+      "receiveTimeout": 10000,
+      "refText": "Nice to meet you!",
+      "recorderMaxTime": 14000,
+      "autoStopMaxRecord": true
+    },
+    "4": {
+      "type": "Audio",
+      "src": 4
+    }
+  },
+  "name": "VFT2J",
+  "width": 890,
+  "height": 500,
+  "version": "0.0.1",
+  "baseUrl": "",
+  "loadMode": "all",
+  "conversion": "",
+  "scaleMode": "showAll"
+}
